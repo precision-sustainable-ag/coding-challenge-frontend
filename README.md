@@ -60,7 +60,7 @@ This will install the necessary dependencies and run the app in the development 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Refactoring the About File
-The About.js file is very long (700+ lines) and not structured logically. This file shouold be broken up into reuseable subcomponents. Tere is also unneded logic and styles that can be removed or simplified. 
+The About.js file is very long (700+ lines) and not structured logically. This file should be broken up into reuseable subcomponents. There is also unneeded logic and styles that can be removed or simplified. 
 
 ### Creating Reuseable Subcomponents
 Examine the file and identify components that can be created to reduce the complexity of the About file. Try to think beyond just this file and create components that could be used in the future.
