@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Prompt  
+**Please schedule a meeting for this week using the link from the original interview email and have your solution prepared 24 hours before the meeting so we can review your solution ahead of time. If you have any questions, concerns, or need anything at all please do not hesitate to contact awsmit14@ncsu.edu or mspinega@ncsu.edu** 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This is not pass / fail. Your program will be assessed for how you go about solving the problem.  
+> Not completing the challenge is not an automatic disqualification.  
+> You should attempt to create reusable components.
+> You should attempt to reduce the logic as much as possible.
+> You should attempt to simplify styling.
+> You should attempt to simplify logic.
+> You should attempt to improve styling.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+You are given a legacy react app and tasked with refactoring it.    
+  
+This app was created using CRA, see below for instructions on how to build it locally. 
+  
+The app is comprised of 4 files: index.js, App.js, and About.js
+  
+index.js renders App.js.
+  
+App.js has one route, `/` which renders About.js
+  
+The About.js file is very long (700+ lines) and not structured logically, this is the main file that needs to be refactored.
+    
+## Git Usage
+To ensure a clear history of your development process, please follow these guidelines for using Git:
+1. **Fork this repository**: Create a fork of this repo and grant read access to @mikahpinegar and @Adamws33 so we can review your commit history
+2. **Main Branch**: Maintain a `main` branch that will serve as the primary branch for the project. This branch should contain your project's most stable and final version of the code.
+3. **Feature Branches**: For each new feature or significant change, create a new branch from `main`. Name these branches with a prefix of `feature/` followed by a short descriptor of the feature (e.g., `feature/add-loan-calculation`).
+4. **Bug Fix Branches**: If you need to fix a bug, create a branch with a prefix of `bugfix/` followed by a short descriptor of the bug fix (e.g., `bugfix/fix-input-validation`).
+5. **Commit Messages**: Write clear and descriptive commit messages. This helps in understanding the purpose of each change and makes the project history more readable.
+6. **Pull Requests**: Once a feature or bug fix is complete, create a pull request (PR) to merge your branch back into `main`. Provide a brief description of the changes and any other relevant information for the review. Once a PR is ready, merge it into the main branch. There is no need for code review in this project.
 
-### `npm start`
+Following these guidelines will help us understand your approach to solving the challenge and assess your skills in version control management.
 
-Runs the app in the development mode.\
+## Instructions
+
+- [Prompt](#prompt)
+  - [Overview](#overview)
+  - [Git Usage](#git-usage)
+  - [Instructions](#instructions)
+    - [Building Locally](#building-locally)
+    - [Refactoring the About File](#refactoring-the-about-file)
+    - [Creating Reuseable Subcomponents](#creating-reuseable-subcomponents)
+    - [Removing Unneeded Logic](#removing-unneeded-logic)
+    - [Removing Unneeded Styles](#removing-unneeded-styles)
+    - [Improving Styles](#improving-styles)
+
+### Building Locally
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
+
+To build locally, you will need to run
+
+`npm install`
+
+`npm start`
+
+This will install the necessary dependencies and run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Refactoring the About File
+The About.js file is very long (700+ lines) and not structured logically. This file shouold be broken up into reuseable subcomponents. Tere is also unneded logic and styles that can be removed or simplified. 
 
-### `npm test`
+### Creating Reuseable Subcomponents
+Examine the file and identify components that can be created to reduce the complexity of the About file. Try to think beyond just this file and create components that could be used in the future.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Removing Unneeded Logic
+The logic in this file is not optimized. How could you structure the data in a way that could more easily be mapped over?
 
-### `npm run build`
+### Removing Unneeded Styles
+There is some styling that is superfluous in the About.js file. See how you can simplify the styling of this file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Improving Styles
+This is a very basic file that could be designed better. Examine the file and update the styling however you think would improve the user experience.
+  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
