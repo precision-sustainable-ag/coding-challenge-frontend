@@ -314,20 +314,6 @@ const About = () => {
           ).
           <br />
           <br />
-          <span style={{ display: 'inline-flex', justifyContent: 'center' }}>
-            <img
-              style={{
-                width: '70%',
-                boxShadow: '0 0 5px rgb(89, 132, 68)',
-                borderRadius: '5px',
-                padding: '1%',
-              }}
-              src="/images/mockup.gif"
-              alt="Decision Support Tool Mockup"
-            />
-          </span>
-          <br />
-          <br />
           <b>Reusability:</b>
           {' '}
           We designed the user interface components of the Cover Crop
