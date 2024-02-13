@@ -1,4 +1,4 @@
-import About from "./About";
+import About from "./components/About/About";
 import License from "./License";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
