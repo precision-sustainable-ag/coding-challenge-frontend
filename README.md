@@ -15,7 +15,7 @@ You are given a legacy react app and tasked with refactoring it.
   
 This app was created using CRA, see below for instructions on how to build it locally. 
   
-The app is comprised of 4 files: index.js, App.js, and About.js
+The app is comprised of 3 files: index.js, App.js, and About.js
   
 index.js renders App.js.
   
