@@ -8,7 +8,6 @@
 import {
   Box, Button, Grid, Stack, Table, TableBody, TableCell, TableContainer, TableRow, Typography,
 } from '@mui/material';
-import { Link } from 'react-router-dom';
 import React from 'react';
 
 const About = () => {
@@ -260,11 +259,7 @@ const About = () => {
             (https://covercrop.tools). The data files and their contents licensed under the terms of
             MIT License. You may use, copy, modify and redistribute all files included in this
             distribution, individually or in aggregate, subject to the terms and conditions of the
-            MIT license. See
-            {' '}
-            <Link to="/license">License</Link>
-            {' '}
-            for details.
+            MIT license.
           </Typography>
         </Grid>
     </Grid>
